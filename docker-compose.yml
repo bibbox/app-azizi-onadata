@@ -12,7 +12,7 @@ services:
     links:
       - onadata
     ports:
-      - 80:80
+      - 8080:80
 
   db:
     image: kartoza/postgis:9.6-2.4
@@ -46,8 +46,8 @@ services:
       - DEFAULT_DB_USER=onadata
       - DEFAULT_DB_PASS=onadata
       - DEV_LOGIN_USERNAME=admin
-      - DEV_LOGIN_PASSWORD=admin
-      - MEDIA_URL=http://localhost:8000/media/
+      - DEV_LOGIN_PASSWORD=onadata
+      - MEDIA_URL=http://onadata:8000/media/
       - BROKER_URL=amqp://guest:guest@rabbitmq:5672//
       - DJANGO_SETTINGS_MODULE=onadata.settings.docker
       - DEFAULT_DB_ENGINE=django.contrib.gis.db.backends.postgis
