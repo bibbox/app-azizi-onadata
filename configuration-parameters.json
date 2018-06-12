@@ -1,0 +1,29 @@
+[
+   {
+      "id":"ONA_DATABASE",
+      "display_name":"The PostgreSQL database name",
+      "type":"text",
+      "default_value":"onadata",
+      "description":"The name of the default database",
+      "min_length": "1",
+      "max_length": "128"
+   },
+   {
+      "id":"ONA_USER",
+      "display_name":"The PostgreSQL Database User",
+      "type":"text",
+      "default_value":"",
+      "description":"The postgres database user",
+      "min_length": "1",
+      "max_length": "128"
+   },
+   {
+      "id":"ONA_PASSWORD",
+      "display_name":"The PostgreSQL database password",
+      "type":"PASSWORD",
+      "default_value":"",
+      "description":"Password for the PostgreSQL database",
+      "min_length": "1",
+      "max_length": "128"
+   }
+]

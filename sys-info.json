@@ -1,0 +1,4 @@
+{
+  runningcontainers:["§§INSTANCE-azizi-ona-db", "§§INSTANCE-azizi-ona-rabbitmq", "§§INSTANCE-azizi-ona-onadata"],
+  supportcontainers:[]    
+}
