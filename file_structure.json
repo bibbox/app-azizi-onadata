@@ -2,5 +2,16 @@
   "makefolders":[
     "srv",
     "srv/onadata"
+  ],
+  "copyfiles":[
+  {
+      "source":".",
+      "destination":"azizi_onadata"
+    },
+
+  {
+      "source":"docker/nginx",
+      "destination":"docker/nginx"
+    }
   ]
 }

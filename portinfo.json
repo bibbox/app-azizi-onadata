@@ -1,8 +1,39 @@
 {
   "mappings": [
     {
-      "id": "§§PORT",
+      "id": "§§ONA_INSTANCE",
       "url": "§§INSTANCE",
+      "protocol": "HTTP",
+      "proxy" : "PRIMARY"
+    },
+    {
+      "id": "§§ONA_PORT",
+      "url": "§§ONA_INSTANCE",
+      "protocol": "HTTP",
+      "proxy" : "PRIMARY"
+    },
+    {
+      "id": "§§ONA_RABBITMQ1",
+      "url": "§§RABBITMQ1_INSTANCE",
+      "protocol": "HTTP",
+      "proxy" : "PRIMARY"
+         #
+    },
+    {
+      "id": "§§ONA_RABBITMQ2",
+      "url": "§§RABBITMQ2_INSTANCE",
+      "protocol": "HTTP",
+      "proxy" : "PRIMARY"
+    },
+    {
+      "id": "§§ONA_RABBITMQ3",
+      "url": "§§RABBITMQ3_INSTANCE",
+      "protocol": "HTTP",
+      "proxy" : "PRIMARY"
+    },
+    {
+      "id": "§§ONA_ONADATA",
+      "url": "§§ONADATA_INSTANCE",
       "protocol": "HTTP",
       "proxy" : "PRIMARY"
     }
