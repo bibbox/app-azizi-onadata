@@ -4,7 +4,7 @@
 		"version": "V.1.0",
 		"description": "Azizi Onadata is an implementation of the Onadata server for the B3Africa project",
         "short_description": "Azizi implementation of Onadata for B3Africa",
-		"catalogue_url": "",
-		"application_url": "",
+        "application_url": "http://amp.azizi.ilri.org",
+        "application_documentation_url": "http://amp.azizi.ilri.org/UserGuide",
 		"tags": ["Data Collection", "Data Management"]
 }
