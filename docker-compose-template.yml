@@ -61,7 +61,7 @@ services:
       - DJANGO_SETTINGS_MODULE=onadata.settings.docker
       - DEFAULT_DB_ENGINE=django.contrib.gis.db.backends.postgis
     volumes:
-      - .:/srv/onadata
+      - .:/opt/onadata
     depends_on:
       - §§INSTANCE-azizi-ona-db
       - §§INSTANCE-azizi-ona-rabbitmq
@@ -72,3 +72,10 @@ services:
       - 8000
     networks:
       - bibbox-default-network
+
+  §§INSTANCE-azizi-ona-data:
+    image: busybox
+    container_name: §§INSTANCE-azizi-ona-data
+    volumes:
+      - .postgres_data:/var/lib/postgresql
+      - ./azizi_onadata:/opt/azizi_onadata
