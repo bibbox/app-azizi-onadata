@@ -7,4 +7,4 @@ RUN mkdir /opt/azizi_onadata/
 RUN rm -rf /var/lib/apt/lists/* \
   && find . -name '*.pyc' -type f -delete
 
-CMD ["/srv/onadata/docker/docker-entrypoint.sh"]
+CMD ["/opt/azizi_onadata/docker/docker-entrypoint.sh"]

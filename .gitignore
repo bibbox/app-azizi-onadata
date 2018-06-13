@@ -30,7 +30,7 @@ build
 .project
 .pydevproject
 .sass-cache
-.postgres
+.postgres_data
 
 *.bak
 *.gz
