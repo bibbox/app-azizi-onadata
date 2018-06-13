@@ -45,8 +45,7 @@ services:
       - bibbox-default-network
 
   §§INSTANCE-azizi-ona-onadata:
-    build:
-      context: .
+    image: bibbox/azizi-onadata
     command: bash -c "./docker/wait-for-it.sh db:5432 && ./docker/docker-entrypoint.sh"
     environment:
       - PYTHONUNBUFFERED=1
