@@ -1,17 +1,12 @@
 {
   "makefolders":[
-    "srv",
-    "srv/onadata"
+    "postgres_data",
+	"azizi_onadata"
   ],
   "copyfiles":[
   {
-      "source":".",
-      "destination":"azizi_onadata"
-    },
-
-  {
-      "source":"docker/nginx",
-      "destination":"docker/nginx"
+      "source":"docker",
+      "destination":"docker"
     }
   ]
 }

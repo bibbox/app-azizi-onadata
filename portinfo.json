@@ -1,7 +1,7 @@
 {
   "mappings": [
     {
-      "id": "§§ONA_INSTANCE",
+      "id": "§§PORTWEB",
       "url": "§§INSTANCE",
       "protocol": "HTTP",
       "proxy" : "PRIMARY"

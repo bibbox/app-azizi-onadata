@@ -9,15 +9,13 @@ services:
     build:
       context: .
       dockerfile: docker/nginx/nginx_dockerfile
-    volumes:
-      - ./docker/nginx:/etc/nginx/conf.d:ro
     command: nginx-debug -g 'daemon off;'
     depends_on:
       - §§INSTANCE-azizi-ona-onadata
     links:
-      - "§§INSTANCE-azizi-ona-onadata:azizi-ona-onadata"
+      - §§INSTANCE-azizi-ona-onadata:azizi-ona-onadata
     ports:
-      - 8080:80
+      - §§PORTWEB:80
     networks:
       - bibbox-default-network
 
@@ -28,19 +26,11 @@ services:
       - POSTGRES_DB=§§ONA_DATABASE
       - POSTGRES_PASSWORD=§§ONA_PASSWORD
       - POSTGRES_USER=§§ONA_USER
-    volumes:
-      - .postgres_data/:/var/lib/postgresql:rw
-    ports:
-      - 5432
     networks:
       - bibbox-default-network
 
   §§INSTANCE-azizi-ona-rabbitmq:
     image: gonkulatorlabs/rabbitmq:3.6.1
-    ports:
-      - 15672
-      - 5671
-      - 5672
     networks:
       - bibbox-default-network
 
@@ -68,8 +58,6 @@ services:
     links:
       - §§INSTANCE-azizi-ona-db
       - §§INSTANCE-azizi-ona-rabbitmq
-    ports:
-      - 8000
     networks:
       - bibbox-default-network
 
@@ -77,5 +65,5 @@ services:
     image: busybox
     container_name: §§INSTANCE-azizi-ona-data
     volumes:
-      - .postgres_data:/var/lib/postgresql
+      - ./postgres_data:/var/lib/postgresql
       - ./azizi_onadata:/opt/azizi_onadata
