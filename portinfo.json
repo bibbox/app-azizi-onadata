@@ -5,37 +5,6 @@
       "url": "§§INSTANCE",
       "protocol": "HTTP",
       "proxy" : "PRIMARY"
-    },
-    {
-      "id": "§§ONA_PORT",
-      "url": "§§INSTANCE_ONA",
-      "protocol": "HTTP",
-      "proxy" : "PRIMARY"
-    },
-    {
-      "id": "§§ONA_RABBITMQ1",
-      "url": "§§INSTANCE_RABBITMQ1",
-      "protocol": "HTTP",
-      "proxy" : "PRIMARY"
-         #
-    },
-    {
-      "id": "§§ONA_RABBITMQ2",
-      "url": "§§INSTANCE_RABBITMQ2",
-      "protocol": "HTTP",
-      "proxy" : "PRIMARY"
-    },
-    {
-      "id": "§§ONA_RABBITMQ3",
-      "url": "§§INSTANCE_RABBITMQ3",
-      "protocol": "HTTP",
-      "proxy" : "PRIMARY"
-    },
-    {
-      "id": "§§ONA_ONADATA",
-      "url": "§§INSTANCE_ONADATA",
-      "protocol": "HTTP",
-      "proxy" : "PRIMARY"
     }
   ]
 }

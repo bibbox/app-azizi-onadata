@@ -17,7 +17,7 @@ services:
     links:
       - "§§INSTANCE-azizi-ona-onadata:azizi-ona-onadata"
     ports:
-      - §§ONA_INSTANCE:8080
+      - 8080:80
     networks:
       - bibbox-default-network
 
@@ -31,16 +31,16 @@ services:
     volumes:
       - .postgres_data/:/var/lib/postgresql:rw
     ports:
-      - §§ONA_PORT:5432
+      - 5432
     networks:
       - bibbox-default-network
 
   §§INSTANCE-azizi-ona-rabbitmq:
     image: gonkulatorlabs/rabbitmq:3.6.1
     ports:
-      - §§ONA_RABBITMQ1:15672
-      - §§ONA_RABBITMQ2:5671
-      - §§ONA_RABBITMQ3:5672
+      - 15672
+      - 5671
+      - 5672
     networks:
       - bibbox-default-network
 
@@ -70,6 +70,6 @@ services:
       - §§INSTANCE-azizi-ona-db
       - §§INSTANCE-azizi-ona-rabbitmq
     ports:
-      - §§ONA_ONADATA:8000
+      - 8000
     networks:
       - bibbox-default-network
