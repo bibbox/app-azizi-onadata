@@ -7,7 +7,7 @@ networks:
 services:
   §§INSTANCE-azizi-ona-nginx:
     build:
-      context: .docker/nginx
+      context: ./docker/nginx
       dockerfile: nginx_dockerfile
     container_name: §§INSTANCE-azizi-ona-nginx
     command: nginx-debug -g 'daemon off;'
