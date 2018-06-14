@@ -56,8 +56,8 @@ services:
       - §§INSTANCE-azizi-ona-db
       - §§INSTANCE-azizi-ona-rabbitmq
     links:
-      - §§INSTANCE-azizi-ona-db
-      - §§INSTANCE-azizi-ona-rabbitmq
+      - §§INSTANCE-azizi-ona-db:db
+      - §§INSTANCE-azizi-ona-rabbitmq:azizi-ona-rabbitmq
     networks:
       - bibbox-default-network
 
