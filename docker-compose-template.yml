@@ -9,6 +9,7 @@ services:
     build:
       context: .
       dockerfile: docker/nginx/nginx_dockerfile
+    container_name: §§INSTANCE-azizi-ona-nginx
     command: nginx-debug -g 'daemon off;'
     depends_on:
       - §§INSTANCE-azizi-ona-onadata
