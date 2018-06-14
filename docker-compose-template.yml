@@ -64,6 +64,8 @@ services:
   §§INSTANCE-azizi-ona-data:
     image: busybox
     container_name: §§INSTANCE-azizi-ona-data
+    networks:
+      - bibbox-default-network
     volumes:
       - ./postgres_data:/var/lib/postgresql
       - ./azizi_onadata:/opt/azizi_onadata
