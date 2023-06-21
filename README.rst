@@ -1,6 +1,6 @@
 Ona Platform
 =================
-
+## IMPORTANT: This repository is deprecated and should not be used.
 Collect, Analyze and Share Data!
 
 .. image:: https://travis-ci.org/onaio/onadata.svg?branch=master
